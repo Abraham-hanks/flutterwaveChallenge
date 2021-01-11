@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    margin: 0;
+}
+body {
+    font-family: 'Manrope', sans-serif;
+    height: 100%;
+    margin: 0;
+}
+.content{
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+
+/*============
+Navbar styles
+==============*/
+.navbar-custom{
+    padding: 1rem 0;
+    box-shadow: 0px 1px 1px rgba(200, 200, 200, 0.25);
+}
+.navbar-expand-md .navbar-nav .nav-link{
+    font-size: 0.89rem;
+    font-weight: bold;
+    color: #18191F;
+}
+.nav-item{
+    margin-right: 2rem;
+}
+
+/*============
+Footer styles
+==============*/
+.footer, .push{
+    min-width: 100%;
+    padding: 25px 0;
+}
+.footer p{
+    font-size: 0.89rem;
+}
+.footer-icon{
+    margin-right: 15px;
+}
+.footer-icon:hover{
+    cursor:pointer;
+}
+
+/*============
+Utility class 
+==============*/
+.bg-primary-color{
+    background-color: #3D348B;
+}
+.primary-color{
+    color: #3D348B;
+}
+.bg-secondary-color{
+    background-color: #FCAF58;
+}
+.secondary-color{
+    color: #FCAF58;
+}
+.bg-tertiary-color{
+    background: #000000;
+}
+.tertiary-color{
+    color: #000000;
+}
+.btn-main{
+    border-radius: 8px;
+    background: #3D348B;
+    color: #ffffff;
+    padding: 8px 17px;
+    font-size: 0.89rem;
+    /* font-weight: 700; */
+}
+.btn-second{
+    border-radius: 8px;
+    background: rgba(61, 52, 139, 0.1);
+    color: #3D348B;
+    font-weight: 700;
+    font-size: 0.89rem;
+    padding: 8px 30px;
+}
+.btn-tertiary{
+    border-radius: 8px;
+    background: #ffffff;
+    color: #3D348B;
+    font-weight: 700;
+    font-size: 0.89rem;
+    padding: 8px 30px;
+}
+
+
+/*===============
+Responsive styles 
+=================*/
+@media only screen and (max-width: 360px) {}
+
+@media only screen and (max-width: 543px){}
+
+@media screen and (min-width: 768px) and (max-width: 768px) {}
+
+@media screen and(width: 768px){}
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 768px) {}
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {}
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {}
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {}
+
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {} 

@@ -1,0 +1,80 @@
+/*============
+Section 1 styles
+==============*/
+.section-1{
+    margin-top: 100px;
+}
+.ad-text{
+    color: #DB8A2F;
+    font-size: 1.3rem;
+    letter-spacing: 5px;
+}
+.header-text h1{
+    font-size: 4.25rem;
+    font-weight: 800;
+    color: #18191F;
+}
+.cta{
+    padding: 16px 41px;
+}
+.cta-2{
+    padding: 16px 45px;
+}
+.cta-3{
+    padding: 16px 60px;
+}
+.sp-text{
+    font-size: 1.25rem;
+    display: inline-block;
+    margin-left: 0.3rem;
+}
+.top-img{
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+.top-img img{
+    margin-top: 15%;
+}
+/*============
+Section 2 styles
+==============*/
+.section-2{
+    margin-top: 100px;
+}
+.section-2 h2{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.card-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.card{
+    border: 0;
+}
+.card-img, .card-img-bottom, .card-img-top{
+    width: 50%;
+}
+
+/*============
+Section 3 styles
+==============*/
+.section-3{
+    margin-top: 100px;
+}
+.section-3 h2{
+    font-size: 3rem;
+    color: #ffff;
+}
+.bottom-text p{
+    font-size: 0.89rem;
+    color: #ffff;
+}
+.bottom-img{
+    display: flex;
+    position: absolute;
+    height: 80%;
+    width: 30%;
+    justify-content: center;
+}
