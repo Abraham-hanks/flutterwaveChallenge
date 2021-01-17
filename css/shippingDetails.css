@@ -1,0 +1,57 @@
+.dispatch-rider .rider-info{
+    font-size: 16px;
+}
+.rider-history{
+    color: #676767;
+    font-size: 14px;
+}
+.rider-history span{
+    font-weight: 700;
+    color: black;
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.rider-history a{
+    color: rgba(61, 52, 139, 1);
+    text-decoration: none;
+    float: right;
+}
+.report-issue a{
+    font-size: 14px;
+    color: #DB8A2F;
+}
+.order-item{
+    margin-bottom: 50px;
+}
+.order-item .order{
+    padding: .6rem;
+}
+.order-item .order-img img.one{
+    left: 200%;
+}
+.order-item .order-img img.two{
+    left: 100%;
+}
+.order-item .order-img img.three{
+    left: 50%;
+}
+.order-item .order-img img.four{
+    left: 25%;
+}
+.order-item .order-img .text{
+    position: absolute;
+    left: 250%;
+    line-height: 2.2;
+    color: rgba(61, 52, 139, 1);
+}
+.order-item .date{
+    font-size: 13.5px;
+}
+.order-item .order-status .badge.success {
+    background: rgba(4, 193, 0, 0.1);
+    font-weight: 600;
+    color: rgba(3, 154, 0, 1);
+    padding: .5em 1.2em;
+    border-radius: 8px;
+}

@@ -13,8 +13,10 @@
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <!-- CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/util.css" type="text/css">
     <link rel="stylesheet" href="css/login.css" type="text/css"> 
@@ -30,59 +32,245 @@
     <main class="d-flex">
         <!-- Content goes here -->
         <div class="d-7">
-            <div class="d-flex m-t-80">
-                <div class="d-3 text-center">
-                    <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 6L6 0V12L0 6Z" fill="#3D348B"/></svg>
+            <div class="row m-t-40">
+                <div class="col-md-3 text-center p-t-8">
+                    <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 6L6 0V12L0 6Z" fill="#3D348B"/>
+                    </svg>
                     <a href="index.html" class="custom-link primary-color">Back to Home</a>
                 </div>
-                <div class="d-8"><img src="./assets/Jumga Logo.svg" alt="Jumga Logo" class="logo"></div>
+                <div class="col-md-8"><img src="./assets/Jumga Logo.svg" alt="Jumga Logo" class="logo"></div>
             </div>
-            <div class="m-t-40 text-center login-text">
-                <h3>Personal Information</h3>
-                <p>Let’s get to know you</p>
-            </div>
-            <div class="d-flex m-t-43">
-                <form class="login-form d-7 mx-auto">
-                    <div class="m-b-30">
-                        <input type="email" class="form-control custom-input" id="exampleInputEmail1" placeholder="Email Address">
+            <div class="row m-t-40" id="formContainer">
+                <!-- Personal Information form -->
+                <div id="bioFormContainer">
+                    <div class="col-md-12 text-center login-text">
+                        <h3>Personal Information</h3>
+                        <p>Let’s get to know you</p>
                     </div>
-                    <div class="m-b-30">
-                        <input type="text" class="form-control custom-input" id="exampleInputPassword1" placeholder="Phone Number">
+                    <form class="reg-form col-md-7 mx-auto m-t-43" id="bioForm">
+                        <div class="m-b-30">
+                            <input type="email" class="form-control custom-input"
+                            placeholder="Email Address">
+                        </div>
+                        <div class="m-b-30">
+                            <input type="text" class="form-control custom-input" 
+                            placeholder="Phone Number">
+                        </div>
+                        <div class="m-b-30">
+                            <input type="password" class="form-control custom-input"
+                            placeholder="Password">
+                        </div>
+                        <div class="m-b-30">
+                            <input type="password" class="form-control custom-input"
+                            placeholder="Confirm Password">
+                        </div>
+                        <div class="m-b-30 form-check">
+                            <label class="form-check-label" >
+                                This information would be used to login to your store.
+                            </label>
+                        </div>
+                        <div class="m-b-30 text-end">
+                            <button type="button" class="btn btn-main reg-btn" data-current="bioFormContainer" 
+                            data-target="bvnFormContainer" data-step="2">Continue</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- BVN Verification form -->
+                <div id="bvnFormContainer" class="hide">
+                    <div class="col-md-12 text-center login-text">
+                        <h3>BVN Verification</h3>
+                        <p>Let’s verify your identity</p>
                     </div>
-                    <div class="m-b-30">
-                        <input type="password" class="form-control custom-input" id="exampleInputPassword1" placeholder="Password">
+                    <form class="reg-form col-md-7 mx-auto m-t-43" id="bvnForm">
+                        <div id="bvn1" >
+                            <div class="m-b-30">
+                                <input type="text" class="form-control custom-input"
+                                placeholder="Enter Your Bank Verification Number">
+                            </div>
+                            <div class="m-b-30 form-check">
+                                <label class="form-check-label" >
+                                    We would never save your BVN or sell to a third-party.
+                                </label>
+                            </div>
+                            <div class="m-b-30 text-end">
+                                <a href="" data-target="bioFormContainer" data-current="bvnFormContainer" 
+                                class="previous" data-step="2">
+                                    Previous Step
+                                </a>
+                                <button type="button" class="btn btn-main reg-btn" data-target="bvn2" 
+                                data-current="bvn1">Request OTP</button>
+                            </div>
+                        </div>
+                        <div id="bvn2" class="hide">
+                            <div class="m-b-30">
+                                <p>Enter the OTP sent to your mobile phone</p>
+                                <div class="d-flex">
+                                    <input type="text" class="form-control custom-input d-2 bvn-input" 
+                                    placeholder="" maxlength="1">
+                                    <input type="text" class="form-control custom-input d-2 bvn-input" 
+                                    placeholder="" maxlength="1">
+                                    <input type="text" class="form-control custom-input d-2 bvn-input" 
+                                    placeholder="" maxlength="1">
+                                    <input type="text" class="form-control custom-input d-2 bvn-input" 
+                                    placeholder="" maxlength="1">
+                                    <input type="text" class="form-control custom-input d-2 bvn-input" 
+                                    placeholder="" maxlength="1">
+                                    <input type="text" class="form-control custom-input d-2 bvn-input" 
+                                    placeholder="" maxlength="1">
+                                </div>
+                                <div class="m-t-10">
+                                    <a href="" id="re-OTP">Resend OTP</a>
+                                </div>
+                            </div>
+                            <div class="m-b-30 text-end">
+                                <a href="" data-target="bvn1" data-current="bvn2" 
+                                class="previous">
+                                    Previous Step
+                                </a>
+                                <button type="button" class="btn btn-main reg-btn" data-current="bvnFormContainer" 
+                                data-target="storeFormContainer" data-step="3">Verify</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- Store Information form -->
+                <div id="storeFormContainer" class="hide">
+                    <div class="col-md-12 text-center login-text">
+                        <h3>Store Information</h3>
+                        <p>Almost done! Let’s set up your store</p>
                     </div>
-                    <div class="m-b-30">
-                        <input type="password" class="form-control custom-input" id="exampleInputPassword1" placeholder="Confirm Password">
-                    </div>
-                    <div class="m-b-30 form-check">
-                        <label class="form-check-label" >This information would be used to login to your store.</label>
-                    </div>
-                    <div class="m-b-30 text-end">
-                        <button type="submit" class="btn btn-main reg-btn">Continue</button>
-                    </div>
-                </form>
+                    <form class="reg-form col-md-7 mx-auto  m-t-43" id="storeForm">
+                        <div class="m-b-30">
+                            <input type="text" class="form-control custom-input" 
+                            placeholder="Store Name">
+                        </div>
+                        <div class="m-b-30" id="copy-link">
+                            <input type="text" class="form-control custom-input url-link" 
+                            value="https://www.jumga.com/store/klanapparel" disabled>
+                        </div>
+                        <div class="m-b-30">
+                            <div class="custom-select-wrapper">
+                                <div class="custom-select">
+                                    <div class="custom-select__trigger"><span>Product Category</span>
+                                        <i class="fa fa-caret-down"></i>
+                                    </div>
+                                    <div class="custom-options">
+                                        <span class="custom-option" data-value="1">
+                                            Clothing, Accessories and Shoes
+                                        </span>
+                                        <span class="custom-option" data-value="2">Electronics and gadgets</span>
+                                        <span class="custom-option" data-value="3">Wine and Spirits</span>
+                                        <span class="custom-option" data-value="4">Make-up and Cosmetics</span>
+                                        <span class="custom-option" data-value="5">Others</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <label class="form-select-label" >
+                                Select a category that best describes your products
+                            </label>
+                            <hr>
+                        </div>
+                        <div class="m-b-30">
+                            <div class="row d-flex">
+                                <div class="col-md-7">
+                                    <div class="custom-select-wrapper">
+                                        <div class="custom-select">
+                                            <div class="custom-select__trigger"><span>Bank Name</span>
+                                                <i class="fa fa-caret-down"></i>
+                                            </div>
+                                            <div class="custom-options">
+                                                <span class="custom-option" data-value="1">
+                                                    Access Bank
+                                                </span>
+                                                <span class="custom-option" data-value="2">
+                                                    United Bank of Africa
+                                                </span>
+                                                <span class="custom-option" data-value="3">
+                                                    Polaris Bank
+                                                </span>
+                                                <span class="custom-option" data-value="4">
+                                                    Zenith Bank
+                                                </span>
+                                                <span class="custom-option" data-value="5">Others</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="custom-select-wrapper">
+                                        <div class="custom-select">
+                                            <div class="custom-select__trigger"><span>Country</span>
+                                                <i class="fa fa-caret-down"></i>
+                                            </div>
+                                            <div class="custom-options">
+                                                <span class="custom-option" data-value="1">
+                                                    Nigeria
+                                                </span>
+                                                <span class="custom-option" data-value="2">
+                                                    Ghana
+                                                </span>
+                                                <span class="custom-option" data-value="3">
+                                                    Togo
+                                                </span>
+                                                <span class="custom-option" data-value="4">
+                                                    Mali
+                                                </span>
+                                                <span class="custom-option" data-value="5">Others</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>      
+                        </div>
+                        <div class="m-b-30">
+                            <input type="text" class="form-control custom-input" 
+                            placeholder="Account Number">
+                        </div>
+                        <div class="m-b-30">
+                            <label class="form-select-label" >
+                                Note: Payments would be made to this account
+                            </label>
+                        </div>
+                        <div class="m-b-30 text-end">
+                            <a href="" data-target="bvnFormContainer" data-current="storeFormContainer" 
+                            class="previous" data-step="3">
+                                Previous Step
+                            </a>
+                            <a href="./dashboard/product.html">
+                                <button type="button" class="btn btn-main reg-btn complete-reg">Finish</button>
+                            </a>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="d-5 bg-primary-color">
-            <div class="reg-img"><img src="./assets/Saly-2.svg"></div>
-            <div class="d-flex section-2">
-                <div class="d-7 m-l-80">
-                    <div class="m-b-200"><a href="login.html" class="text-white">Already have an account? Login</a></div>
-                    <div class="d-flex section-2-text">
-                        <img src="./assets/Group 24.svg" class="">
-                        <!-- <p class="text-white">Access and manage your products</p> -->
+        <div class="d-5 bg-primary-color side-section">
+            <div class="reg-img"><img src="./assets/register/Saly-2.svg"></div>
+            <div class="row section-2">
+                <div class="col-md-7 m-l-50">
+                    <div class="m-b-130">
+                        <a href="login.html" class="text-white">Already have an account? Login</a>
                     </div>
-                    <div class="d-flex section-2-text">
-                        <img src="./assets/Group 23.svg" class="">
-                        <!-- <p class="text-white">Recieve payment from UK, Ghana, Nigeria and Kenya.</p> -->
-                    </div>
-                    <div class="d-flex section-2-text">
-                        <img src="./assets/Group 25.svg" class="">
-                        <!-- <p class="text-white">Get a dispatch rider assigned to you</p> -->
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="section-2-text">
+                                <img src="./assets/DoNotChangeName/bvn-1-orange.svg" class="" id="step-1">
+                                <!-- <p class="text-white">Access and manage your products</p> -->
+                            </div>
+                            <div class="section-2-text">
+                                <img src="./assets/DoNotChangeName/bvn-2-grey.svg" class="" id="step-2">
+                                <!-- <p class="text-white">Recieve payment from UK, Ghana, Nigeria and Kenya.</p> -->
+                            </div>
+                            <div class="section-2-text">
+                                <img src="./assets/DoNotChangeName/bvn-3-grey.svg" class="" id="step-3">
+                                <!-- <p class="text-white">Get a dispatch rider assigned to you</p> -->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="bottom-img"><img src="./assets/register/Group 2.2.png"></div>
         </div>
     </main>
     <!-- Footer -->
@@ -92,5 +280,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="scripts/script.js"></script>
+    <script src="scripts/register.js"></script>
 </body>
 </html>

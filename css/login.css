@@ -20,6 +20,9 @@ main{
     color: black;
     float: right;
 }
+.forgot-pw-link:hover{
+    cursor: pointer;
+}
 .form-btn{
     padding: 20px 90px;
     width: 100%;
@@ -27,6 +30,7 @@ main{
 .custom-input{
     background-color: #F6F6F6;
     padding: 10px 20px;
+    border-radius: 0.5rem;
 }
 .section-2{
     padding-top: 80px;

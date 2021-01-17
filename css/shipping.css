@@ -1,0 +1,25 @@
+.custom-container{
+    margin-left: 200px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+#hidden{
+    visibility: hidden!important;
+}
+.empty-space{
+    padding-bottom: 83%;
+}
+.dispatch-rider .orders-container{
+    padding: 1.2rem;
+    padding-bottom: 1.5rem;
+}
+.dispatch-rider .rider-status{
+    font-size: 18px;
+    font-weight: 600;
+}
+.dispatch-rider .rider-info{
+    font-size: 13px;
+}
+.dispatch-rider .payment-secured{
+    font-size: 12px;
+}

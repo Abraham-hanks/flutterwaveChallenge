@@ -1,0 +1,89 @@
+.orders-container{
+    box-shadow: 0px 4px 15px 0px rgba(196, 196, 196, 0.5);
+    border-radius: 8px;
+    padding: 2rem;
+}
+.orders-container .search-orders .custom-input{
+    border-right: 0px;
+}
+.input-group-text{
+    background: rgba(246, 246, 246, 1);
+    border-left: 0;
+    padding-right: 1.2rem;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.orders-nav{
+    background: rgba(242, 242, 242, 1);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 1rem;
+}
+.order-item .date{
+    color: rgba(161, 161, 161, 1);
+    font-size: 14px;
+}
+.order-item .order{
+    padding: 1.5rem;
+    position: relative;
+}
+.order-item .order-img{
+    display: flex;
+    justify-content: center;
+}
+.order-item .order-img img{
+    position: absolute;
+}
+.order-item .order-img img.one{
+    left: 50%;
+}
+.order-item .order-img img.two{
+    left: 40%;
+}
+.order-item .order-img img.three{
+    left: 30%;
+}
+.order-item .order-img img.four{
+    left: 20%;
+}
+.order-item .order-img .text{
+    position: absolute;
+    left: 55%;
+    line-height: 2.2;
+    color: rgba(61, 52, 139, 1);
+}
+.order-item .order-status .badge{
+    background: rgba(255, 242, 226, 1);
+    font-weight: 600;
+    color: rgba(219, 138, 47, 1);
+    padding: .5em 1.2em;
+    border-radius: 8px;
+}
+.order-item .btn-tertiary{
+    border: 1px solid #3d348b;
+}
+.order-item .check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.order-item .price{
+    padding-left: 0;
+}
+.order-item .form-check-input[type=checkbox] {
+    border-radius: 0;
+}
+.order-item .form-check-input:checked {
+   background-color: #3D348B;
+    border-color: #3D348B;
+}
+.order-item.selected{
+    background: rgba(61, 52, 139, 0.05);
+}
+#select-count{
+    margin-right: 1rem;
+    font-weight: 600;
+}
+#select-count #count{
+    margin-right: 0.2rem;
+}
