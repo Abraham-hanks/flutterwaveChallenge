@@ -1,4 +1,8 @@
 $(document).ready(function(){
+    $('#basic-addon2').click(function(){
+      console.log('clicked');
+      window.location = "searchProduct.html"
+    })
    
     $('.upload-img').click(function () {
        $('#modal-btn').click();

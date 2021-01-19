@@ -73,20 +73,6 @@
     <!-- Main content -->
     <main class="content">
         <!-- Content goes here -->
-        
-        <!-- Alert message -->
-        <div class="alert" id="success-add">
-          <span class="success-icon">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20ZM9.003 14L16.073 6.929L14.659 5.515L9.003 11.172L6.174 8.343L4.76 9.757L9.003 14Z" fill="#039A00"/>
-            </svg>
-          </span>
-          <div class="message">
-            <p class="message-title">New Product Added  🎉</p>
-            <p class="message-body">Klan Cropped Tee- SS21 - added to your store.</p>
-          </div>
-          <div><i class="fas fa-times close" data-target="success-add"></i></div>
-        </div>
 
         <!-- Heading and search -->
         <div class="row custom-row m-b-200">
@@ -99,7 +85,7 @@
                         <div class="search-products">
                           <div class="input-group mb-3  search-products">
                             <input type="text" class="form-control custom-input"  placeholder="Search for your products">
-                            <span class="input-group-text" id="basic-addon2">
+                            <span class="input-group-text" id="search">
                               <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M16.031 14.617L20.314 18.899L18.899 20.314L14.617 16.031C13.0237 17.3082 11.042 18.0029 9 18C4.032 18 0 13.968 0 9C0 4.032 4.032 0 9 0C13.968 0 18 4.032 18 9C18.0029 11.042 17.3082 13.0237 16.031 14.617ZM14.025 13.875C15.2941 12.5699 16.0029 10.8204 16 9C16 5.132 12.867 2 9 2C5.132 2 2 5.132 2 9C2 12.867 5.132 16 9 16C10.8204 16.0029 12.5699 15.2941 13.875 14.025L14.025 13.875Z" fill="#A1A1A1"/>
                                 </svg>
@@ -116,75 +102,55 @@
             <div class="container m-t-40">
               <div class="row">
                 <div class="col-md-10 mx-auto">
-                  <p class="product-count"><span id="count">2</span> Product(s)</p>
                   <div class="product-section">
                     <div class="row">
                       <div class="col-md-12">
                         <div class="row">
-                          <div class="col-md-3 p-r-20 m-b-30">
-                            <div class="card p-relative">
-                              <img src="../assets/Rectangle 41.svg" class="upload-img" alt="..." 
-                              style="max-height: 180px;">
-                              <div class="upload-icon2">
-                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M1.44444 0H24.5556C24.9386 0 25.306 0.152182 25.5769 0.423068C25.8478 0.693954 26 1.06135 26 1.44444V24.5556C26 24.9386 25.8478 25.306 25.5769 25.5769C25.306 25.8478 24.9386 26 24.5556 26H1.44444C1.06135 26 0.693954 25.8478 0.423068 25.5769C0.152182 25.306 0 24.9386 0 24.5556V1.44444C0 1.06135 0.152182 0.693954 0.423068 0.423068C0.693954 0.152182 1.06135 0 1.44444 0ZM11.5556 11.5556H5.77778V14.4444H11.5556V20.2222H14.4444V14.4444H20.2222V11.5556H14.4444V5.77778H11.5556V11.5556Z" fill="#3D348B"/>
-                                  </svg>
-                                <p>Add Product Image</p>
+                            <div class="col-md-3 p-r-20 m-b-30 result">
+                                <div class="card p-relative">
+                                  <img src="../assets/Rectangle 41.svg" class="upload-img" alt="..." 
+                                  style="max-height: 180px;">
+                                  <div class="upload-icon2">
+                                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M1.44444 0H24.5556C24.9386 0 25.306 0.152182 25.5769 0.423068C25.8478 0.693954 26 1.06135 26 1.44444V24.5556C26 24.9386 25.8478 25.306 25.5769 25.5769C25.306 25.8478 24.9386 26 24.5556 26H1.44444C1.06135 26 0.693954 25.8478 0.423068 25.5769C0.152182 25.306 0 24.9386 0 24.5556V1.44444C0 1.06135 0.152182 0.693954 0.423068 0.423068C0.693954 0.152182 1.06135 0 1.44444 0ZM11.5556 11.5556H5.77778V14.4444H11.5556V20.2222H14.4444V14.4444H20.2222V11.5556H14.4444V5.77778H11.5556V11.5556Z" fill="#3D348B"/>
+                                      </svg>
+                                    <p>Add Product Image</p>
+                                  </div>
+                                </div>
                               </div>
-                            </div>
-                          </div>
-                          <div class="col-md-3 p-r-20 m-b-30">
-                            <div class="card">
-                              <img src="../assets/-ULstaRUzp0.png" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Klan Cropped Tee - SS21</h5>
-                                <p class="card-text">
-                                  <span class="product-cost primary-color">$50.00</span>
-                                  <span class="dot-container"> <span class="dot"></span></span>
-                                  <span class="product-stock">4 left in stock</span>
-                                </p>
+                              <div class="col-md-3 p-r-20 m-b-30 result">
+                                <div class="card">
+                                  <img src="../assets/-ULstaRUzp0.png" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Klan Cropped Tee - SS21</h5>
+                                    <p class="card-text">
+                                      <span class="product-cost primary-color">$50.00</span>
+                                      <span class="dot-container"> <span class="dot"></span></span>
+                                      <span class="product-stock">4 left in stock</span>
+                                    </p>
+                                  </div>
+                                </div>
                               </div>
-                            </div>
-                          </div>
-                          <div class="col-md-3 p-r-20 m-b-30">
-                            <div class="card">
-                              <img src="../assets/rc95olD23Hk.png" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Klan Cropped Tee - SS21</h5>
-                                <p class="card-text">
-                                  <span class="product-cost primary-color">$50.00</span>
-                                  <span class="dot-container"> <span class="dot"></span></span>
-                                  <span class="product-stock">4 left in stock</span>
-                                </p>
+                              <div class="col-md-3 p-r-20 m-b-30 result">
+                                <div class="card">
+                                  <img src="../assets/rc95olD23Hk.png" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Klan Cropped Tee - SS21</h5>
+                                    <p class="card-text">
+                                      <span class="product-cost primary-color">$50.00</span>
+                                      <span class="dot-container"> <span class="dot"></span></span>
+                                      <span class="product-stock">4 left in stock</span>
+                                    </p>
+                                  </div>
+                                </div>
                               </div>
+                            <div class="col-md-7 mx-auto">
+                                <div class="card no-result hide">
+                                    <img src="../assets/product/Saly-21.svg">
+                                    <h2 class="text-center">Sorry, no matches for Klan B </h2>
+                                    <p class="text-center">Try searching for another term</p>
+                                </div>
                             </div>
-                          </div>
-                          <div class="col-md-3 p-r-20 m-b-30">
-                            <div class="card">
-                              <img src="../assets/lag-tax.jpg" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Klan Cropped Tee - SS21</h5>
-                                <p class="card-text">
-                                  <span class="product-cost primary-color">$50.00</span>
-                                  <span class="dot-container"> <span class="dot"></span></span>
-                                  <span class="product-stock">4 left in stock</span>
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-3 p-r-20 m-b-30">
-                            <div class="card">
-                              <img src="../assets/zI7O1I3UBPM.png" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Klan Cropped Tee - SS21</h5>
-                                <p class="card-text">
-                                  <span class="product-cost primary-color">$50.00</span>
-                                  <span class="dot-container"> <span class="dot"></span></span>
-                                  <span class="product-stock">4 left in stock</span>
-                                </p>
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -376,5 +342,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="../scripts/script.js"></script>
     <script src="../scripts/addProduct.js"></script>
+    <script src="../scripts/search.js"></script>
 </body>
 </html>

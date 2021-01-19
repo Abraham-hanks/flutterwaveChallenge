@@ -187,3 +187,6 @@ input.error + .error-message{
 #detailsModal .custom-input{
     color: rgba(0, 0, 0, 1);
 }
+#basic-addon2:hover, #search:hover{
+ cursor: pointer;
+}
