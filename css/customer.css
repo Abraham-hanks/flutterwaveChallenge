@@ -1,0 +1,62 @@
+.navbar-brand{
+    margin-right: 0px;
+}
+.custom-row{
+    margin-top: 40px;
+}
+.row{
+    max-width: 100%;
+}
+.custom-row h1{
+    font-size: 30px;
+}
+.category-container .btn-customer{
+    margin-right: 1.5rem;
+}
+.btn-customer{
+    border: 1.5px solid rgba(161, 161, 161, 1);
+    border-radius: 8px;
+    color: rgba(103, 103, 103, 1);
+    padding: .375rem .75rem;
+    padding: 17px 26px;
+    width: 100%;    
+    background: #ffffff;
+    font-size: 0.89rem;
+}
+.btn-customer:hover{
+    background:  rgba(161, 161, 161, 1);
+}
+.search-products #search{
+    background: rgba(246, 246, 246, 1);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-left: 0;
+}
+.search-products #search:hover{
+    cursor: pointer;
+}
+.search-products input{
+    border-right: 0;
+}
+.search-products input:focus{
+    background-color: white;
+}
+.card {
+    max-width: 80%;
+}
+.footer hr{
+    background: rgba(255, 255, 255, 1);
+}
+.footer .terms-link span{
+    border-right: 1px solid;
+    margin-right: 10px;
+    padding-right: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+.footer .terms-link span:last-child{
+    border-right: 0px;
+}
+.footer .reach-us p{
+    font-size: 20px;
+}
