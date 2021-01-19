@@ -55,6 +55,44 @@
     color: rgba(161, 161, 161, 1);
     font-size: 14px;
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+    transition: all ease .5s;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 4px 2px 0px rgba(209, 209, 209, 0.4);
+    padding: 12px 16px;
+    z-index: 1;
+    border-radius: 8px;
+    transition: all ease .5s;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content .dropdown-content-row{
+    padding: .55rem;
+    border-radius: 8px;
+}
+.dropdown-content .dropdown-content-row:hover{
+    background: rgba(61, 52, 139, 0.1);
+    transition: all ease .5s;
+    cursor: pointer;
+}
+.dropdown-content .icon{
+    display: inline-block;
+    padding: .3rem;
+    border-radius: 8px;
+    margin-right: 9px;
+    background: rgba(61, 52, 139, 0.1);
+}
+.dropdown-content .text{
+    font-size: 14px;
+}
 
 /*=================
 Main content styles 
